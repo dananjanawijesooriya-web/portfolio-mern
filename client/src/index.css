@@ -607,3 +607,39 @@ body{
         gap: 15px;
     }
 }
+
+.admin-form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-form label {
+  color: #a855f7;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  background: #12121a;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+  outline: none;
+  border-color: #a855f7;
+}
+
+.admin-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
