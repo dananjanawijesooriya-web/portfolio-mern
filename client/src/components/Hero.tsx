@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
         <p className="sub-text">I build modern web applications and enjoy solving real-world challenges using technology.</p>
       </div>
       <div className="hero-image">
-        <img src="images/skills/myprofile.png" alt="Dananjana Wijesooriya" />
+        <img src={`${import.meta.env.BASE_URL}images/skills/myprofile.png`} alt="Dananjana Wijesooriya" />
       </div>
     </section>
   );

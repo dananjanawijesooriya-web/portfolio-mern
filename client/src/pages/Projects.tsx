@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { getProjects } from '../services/api';
-import type { Project } from '../types/Project';
+import type { Project } from '../types/Projects';
 import { ProjectCard } from '../components/ProjectCard';
+import { useFadeIn } from '../hooks/useFadeIn';
 
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
+  useFadeIn();
 
   useEffect(() => {
     getProjects()

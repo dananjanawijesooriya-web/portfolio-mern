@@ -2,8 +2,11 @@ import { About as AboutSection } from '../components/About';
 import { Education } from '../components/Education';
 import { Skills } from '../components/Skills';
 import { Contact } from '../components/Contact';
+import { useFadeIn } from '../hooks/useFadeIn';
 
-const About = () => (
+const About = () =>{ 
+  useFadeIn();
+  return (
   <>
     <AboutSection />
     <Education />
@@ -11,5 +14,6 @@ const About = () => (
     <Contact />
   </>
 );
+};
 
 export default About;
