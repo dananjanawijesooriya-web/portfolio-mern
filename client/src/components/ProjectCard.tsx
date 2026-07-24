@@ -1,4 +1,4 @@
-import type { Project } from '../types/Project';
+import type { Project } from '../types/Projects';
 
 export const ProjectCard = ({ project }: { project: Project }) => (
   <div className="project-card">
